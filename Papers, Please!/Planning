@@ -1,0 +1,86 @@
+It is good practice to use self.(variable) as that is how __init__'s initialize variables.
+
+__init__ is not attached to any function inside of its class. Rather, it executes no
+matter what, as long as the class is called, regardless of the function called. Therefore,
+no addition code is needed to call the init function.
+
+
+
+GOAL 1:
+Program 10 fulls, flushed out days with flavor and story-related content
+
+GOAL 2:
+Establish an exposated general story
+
+┘└│┌┐─
+
+
+ideas:
+    work alongside another inspector
+
+
+    move locations with different polocies
+        extension
+
+
+    personal bodyguard protecting you
+        extension
+
+    mulitple endings
+        extension
+
+    Nexan defender is a Khaosynth
+
+
+NEW GAME - CHOOSE YOUR OWN ADVENTURE
+    undercover agent for the humans in a Khaosynth fortress
+    information is given to the player to use to make decisions as a choose your own adventure story
+
+
+Phone plan?
+
+┘└│┌┐─‾
+
+
+
+
+
+
+
+
+          _..----.._
+         /  ..--..  \
+       /  /        \  \
+      /  '  ●    ●  '  \
+      |  |     l    |  |
+      /   \   ___  /   \
+      │    |-....-|    │
+      │    │      │    │
+
+
+
+            ..----..
+          /          \
+         '   ●    ●   '
+         |      }     |
+          \   ~~~~    /
+           |'------'|
+         -'          '-
+
+          _ ..---.. _
+         //         \\
+        /' ●    ●    '\
+        \|    ▲      |/
+          \  ___    /
+           |-.....-|
+          /         \
+
+
+
+
+
+
+
+
+
+
