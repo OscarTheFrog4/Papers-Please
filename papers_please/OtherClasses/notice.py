@@ -1,4 +1,5 @@
 from utils import wait
+from pathlib import Path
 
 
 class Notice:
@@ -8,15 +9,10 @@ class Notice:
     def print(self):
 
         # Header
-        print("┌──────────────────────────────┐")
-        print("│            NOTICE            │")
-        print("│                              │")
-        print("│ Planet Vespera               │")
-        print("│ Nexus Harbor                 │")
-        print(f"│ September {str(self.day + 5) + ', 2989':19}│")
-        print("│                              │")
-        print("│ Agent,                       │")
-
+        base_dir = Path(__file__).parent
+        header_template = (base_dir / "notices" / "header.txt").read_text()
+        header = header_template.format(date=str(self.day + 5) + ", 2989")
+        print(header)
 
         match self.day:
             case 1:
@@ -126,21 +122,8 @@ class Notice:
                 print("└──────────────────────────────┘")
 
             case 8:
-                print("│ Our soldiers are struggling  │")
-                print("│ to keep the Khaosynths at    │")
-                print("│ bay. Because of this, the    │")
-                print("│ Nexan Planetary government   │")
-                print("│ has decided to bring it upon │")
-                print("│ you to help cut down the     │")
-                print("│ android population. To do    │")
-                print("│ this, you are supplied EMP   │")
-                print("│ tablets. These tablets are   │")
-                print("│ harmless to humans, but shut │")
-                print("│ down androids instantly.     │")
-                print("│ Therefore, you are           │")
-                print("│ instructed to lace forged    │")
-                print("│ passports with EMP tablets.  │")
-                print("└──────────────────────────────┘")
+                body = (base_dir / "notices" / "body_8.txt").read_text()
+                print(body)
                 input("(Enter anything to continue): ")
                 wait(0, 1)
                 print("* Lacing Passports *")
